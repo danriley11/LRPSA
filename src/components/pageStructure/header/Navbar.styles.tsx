@@ -52,5 +52,6 @@ export const NavBacking = styled.div`
   left: 0;
   right: 0;
   background-color: ${black};
+
   height: ${rem(75)};
 `;
