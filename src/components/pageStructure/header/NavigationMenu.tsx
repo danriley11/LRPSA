@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
-import { GRAND_FOYER, HOUSEKEEPING, LEARNING, /*PLANNING,*/ SHOWCASING } from '../../../routes/routes';
+import { HOME, ABOUT, CONSULTATIONS, SPECIALISTS } from '../../../routes/routes';
 import { MenuIconContainer, XBar1, XBar2, XBar3 } from '../../menu/Menu.styles';
 import { MenuDropdownContainer, MenuDropdownItem } from '../../menu/MenuDropdown.styles';
 import { P } from '../../core/typography';
@@ -35,48 +35,39 @@ const NavigationMenu = () => {
       {isOpen && (
         <MenuDropdownContainer>
           <MenuDropdownItem
-            isPath={pathMatch(GRAND_FOYER)}
+            isPath={pathMatch(HOME)}
             onClick={() => {
               toggleHamburger();
-              navigate(GRAND_FOYER);
+              navigate(HOME);
             }}>
-            <P>Grand foyer</P>
+            <P>Home</P>
           </MenuDropdownItem>
 
           <MenuDropdownItem
-            isPath={pathMatch(LEARNING)}
+            isPath={pathMatch(ABOUT)}
             onClick={() => {
               toggleHamburger();
-              navigate(LEARNING);
+              navigate(ABOUT);
             }}>
-            <P>Learning suite</P>
+            <P>About</P>
           </MenuDropdownItem>
 
           <MenuDropdownItem
-            isPath={pathMatch(SHOWCASING)}
+            isPath={pathMatch(CONSULTATIONS)}
             onClick={() => {
               toggleHamburger();
-              navigate(SHOWCASING);
+              navigate(CONSULTATIONS);
             }}>
-            <P>Showcasing suite</P>
+            <P>Consultations</P>
           </MenuDropdownItem>
 
-          {/* <MenuDropdownItem
-            isPath={pathMatch(PLANNING)}
-            onClick={() => {
-              toggleHamburger();
-              navigate(PLANNING);
-            }}>
-            <P>Planning suite</P>
-          </MenuDropdownItem> */}
-
           <MenuDropdownItem
-            isPath={pathMatch(HOUSEKEEPING)}
+            isPath={pathMatch(SPECIALISTS)}
             onClick={() => {
               toggleHamburger();
-              navigate(HOUSEKEEPING);
+              navigate(SPECIALISTS);
             }}>
-            <P>Housekeepers lodge</P>
+            <P>Specialists</P>
           </MenuDropdownItem>
         </MenuDropdownContainer>
       )}
