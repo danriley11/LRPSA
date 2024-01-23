@@ -10,7 +10,7 @@ const Footer = () => {
     <FooterContainer as="footer">
       <footer className="footer-top">
         <Container>
-          <Heading4>Daniel Riley</Heading4>
+          <Heading4>Noelle Coleman</Heading4>
           <Link to="" aria-disabled>
             Testimonies
           </Link>
@@ -36,7 +36,7 @@ const Footer = () => {
       </footer>
       <footer className="footer-bottom">
         <Container>
-          <P>© {dayjs().year()} Dans Dev Den - All rights reserved</P>
+          <P>© {dayjs().year()} Limb Reconstruction Patient Support Australia - All rights reserved</P>
         </Container>
       </footer>
     </FooterContainer>

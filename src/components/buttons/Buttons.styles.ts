@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { black, darkGrey, deepGreen, emeraldGreen, lightGrey, white } from '../core/colours';
+import { black, darkGrey, hoverPurple, lightGrey, white, activePurple, inactivePurple } from '../core/colours';
 import { rem } from '../core/styles';
 import { fontFamily, fontSize16, fontWeightSemiBold } from '../core/typography';
 
@@ -11,10 +11,10 @@ export const ButtonLink = styled.button<ButtonLinkProps>`
   display: flex;
   width: fit-content;
 
-  color: ${deepGreen};
-  background-color: ${emeraldGreen};
+  color: ${hoverPurple};
+  background-color: ${inactivePurple};
 
-  border: 1px solid ${deepGreen};
+  border: 1px solid ${hoverPurple};
   border-radius: ${rem(24)};
 
   padding: ${rem(12)};
@@ -25,8 +25,13 @@ export const ButtonLink = styled.button<ButtonLinkProps>`
 
   &:hover {
     color: ${white};
-    background-color: ${deepGreen};
+    background-color: ${hoverPurple};
     cursor: pointer;
+  }
+
+  &:active {
+    color: ${white};
+    background-color: ${activePurple};
   }
 
   ${({ disabled = false }) =>
