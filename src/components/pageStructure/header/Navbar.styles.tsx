@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { black, darkGrey, softGrey, white } from '../../core/colours';
+import { darkGrey, decorativePurple, softGrey, white } from '../../core/colours';
 import { MENU_Z_INDEX } from '../../core/z-index';
 import { mediaUp, rem } from '../../core/styles';
 
@@ -51,7 +51,7 @@ export const NavBacking = styled.div`
   top: 0;
   left: 0;
   right: 0;
-  background-color: ${black};
+  background-color: ${decorativePurple};
 
   height: ${rem(75)};
 `;
