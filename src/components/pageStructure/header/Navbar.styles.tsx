@@ -39,6 +39,8 @@ export const NavbarContainer = styled.div<NavbarContainerProps>`
 `;
 
 export const LogoContainer = styled.div`
+  display: flex;
+  padding: 4px 0;
   cursor: pointer;
 
   h1 {
@@ -53,5 +55,5 @@ export const NavBacking = styled.div`
   right: 0;
   background-color: ${decorativePurple};
 
-  height: ${rem(75)};
+  height: ${rem(108)};
 `;

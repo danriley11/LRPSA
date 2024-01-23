@@ -1,9 +1,9 @@
 import { useNavigate } from 'react-router';
 import { HOME } from '../../../routes/routes';
-import { Heading1 } from '../../core/typography';
 import { LogoContainer, NavbarContainer } from './Navbar.styles';
 import NavigationMenu from './NavigationMenu';
 import { useEffect, useState } from 'react';
+import LimbSupportLogo from '../../../assets/Logo.webp';
 
 export const Navbar = () => {
   const navigate = useNavigate();
@@ -25,7 +25,7 @@ export const Navbar = () => {
   return (
     <NavbarContainer isScrolled={isScrolled} as="header">
       <LogoContainer onClick={() => navigate(HOME)}>
-        <Heading1>Logo</Heading1>
+        <img src={LimbSupportLogo} alt="LRPSA Logo" height={'100px'} />
       </LogoContainer>
       <NavigationMenu />
     </NavbarContainer>
