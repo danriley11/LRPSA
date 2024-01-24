@@ -3,7 +3,6 @@ import { Heading4, P } from '../../core/typography';
 import { FooterContainer } from './Footer.styles';
 import { Container } from '../Container.styles';
 import { Link } from 'react-router-dom';
-import ButtonTab from '../../buttons/ButtonTab';
 
 const Footer = () => {
   return (
@@ -11,11 +10,9 @@ const Footer = () => {
       <footer className="footer-top">
         <Container>
           <Heading4>Noelle Coleman</Heading4>
+          <Link to="/contact">Contact Me</Link>
           <Link to="" aria-disabled>
             Testimonies
-          </Link>
-          <Link to="" aria-disabled>
-            Contact Me
           </Link>
         </Container>
         <Container>
@@ -28,16 +25,8 @@ const Footer = () => {
           </Link>
         </Container>
         <Container>
-          <Heading4>Socials</Heading4>
-          <div className="footer-socials">
-            <ButtonTab url="https://www.linkedin.com/in/daniel-riley-a0b43415a/" buttonText="LinkedIn" />
-          </div>
-        </Container>
-        <Container>
           <Heading4>Other</Heading4>
-          <P>
-            <a href="/terms-of-use">Terms of Use</a>
-          </P>
+          <Link to="/terms-of-use">Terms of Use</Link>
         </Container>
       </footer>
       <footer className="footer-bottom">
