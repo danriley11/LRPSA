@@ -9,6 +9,7 @@ const Home = lazy(() => import('./pages/home/Home'));
 const About = lazy(() => import('./pages/about/About'));
 const Consultations = lazy(() => import('./pages/consultations/Consultations'));
 const Specialists = lazy(() => import('./pages/specialists/Specialists'));
+const TermsOfUse = lazy(() => import('./pages/termsOfUse/TermsOfUse'));
 
 function App() {
   return (
@@ -52,7 +53,7 @@ function App() {
             path={TERMS_OF_USE}
             element={
               <DefaultRouteWrapper>
-                <div />
+                <TermsOfUse />
               </DefaultRouteWrapper>
             }
           />
