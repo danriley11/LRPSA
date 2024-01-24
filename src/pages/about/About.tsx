@@ -4,7 +4,8 @@ import { Container } from '../../components/pageStructure/Container.styles';
 import { NavBacking } from '../../components/pageStructure/header/Navbar.styles';
 import AboutMe from '../../assets/AboutMe.webp';
 import Logo from '../../assets/Logo.webp';
-import { AboutContainer, ParallaxImage } from './About.styles';
+import AboutContainer from './About.styles';
+import ParallaxImage from '../../components/blocks/Parallax.styles';
 
 const About = () => {
   return (
