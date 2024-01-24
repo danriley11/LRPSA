@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { HOME, ABOUT, CONSULTATIONS, SPECIALISTS, TERMS_OF_USE } from './routes/routes';
+import { HOME, ABOUT, CONSULTATIONS, SPECIALISTS, TERMS_OF_USE, CONTACT } from './routes/routes';
 import { Suspense, lazy } from 'react';
 import DefaultRouteWrapper from './routes/RouteWrappers';
 import ScrollToTop from './routes/ScrollToTop';
@@ -10,6 +10,7 @@ const About = lazy(() => import('./pages/about/About'));
 const Consultations = lazy(() => import('./pages/consultations/Consultations'));
 const Specialists = lazy(() => import('./pages/specialists/Specialists'));
 const TermsOfUse = lazy(() => import('./pages/termsOfUse/TermsOfUse'));
+const Contact = lazy(() => import('./pages/contact/Contact'));
 
 function App() {
   return (
@@ -54,6 +55,14 @@ function App() {
             element={
               <DefaultRouteWrapper>
                 <TermsOfUse />
+              </DefaultRouteWrapper>
+            }
+          />
+          <Route
+            path={CONTACT}
+            element={
+              <DefaultRouteWrapper>
+                <Contact />
               </DefaultRouteWrapper>
             }
           />
