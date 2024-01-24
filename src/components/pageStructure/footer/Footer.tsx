@@ -24,7 +24,7 @@ const Footer = () => {
             Packages
           </Link>
           <Link to="" aria-disabled>
-            Attributions
+            Books
           </Link>
         </Container>
         <Container>
@@ -32,6 +32,12 @@ const Footer = () => {
           <div className="footer-socials">
             <ButtonTab url="https://www.linkedin.com/in/daniel-riley-a0b43415a/" buttonText="LinkedIn" />
           </div>
+        </Container>
+        <Container>
+          <Heading4>Other</Heading4>
+          <P>
+            <a href="/terms-of-use">Terms of Use</a>
+          </P>
         </Container>
       </footer>
       <footer className="footer-bottom">
