@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { decorativePurple, textDarkPurple } from '../../components/core/colours';
-import { rem } from '../../components/core/styles';
+import { mediaUp, rem } from '../../components/core/styles';
 
 const HomeContent = styled.div`
   display: flex;
@@ -10,8 +10,11 @@ const HomeContent = styled.div`
 
   div {
     background-color: ${decorativePurple};
-    border-radius: ${rem(50)};
     padding: 0 ${rem(48)};
+
+    ${mediaUp.lg`
+    border-radius: ${rem(50)};
+    `}
   }
 
   h1,
