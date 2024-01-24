@@ -71,6 +71,7 @@ export const Heading4 = styled.h4`
 
 type PProps = {
   margin?: number;
+  textAlign?: string;
 };
 export const P = styled.p<PProps>`
   font-size: ${fontSize16};
@@ -78,5 +79,7 @@ export const P = styled.p<PProps>`
   font-weight: ${weights.regular};
   line-height: ${fontSize24};
   max-width: fit-content;
+
   margin: ${({ margin = 16 }) => rem(margin)};
+  text-align: ${({ textAlign = 'left' }) => textAlign};
 `;

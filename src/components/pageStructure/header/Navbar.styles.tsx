@@ -48,8 +48,8 @@ export const LogoContainer = styled.div`
   }
 `;
 
-export const NavBacking = styled.div`
-  position: absolute;
+export const NavBacking = styled.div<{ position?: string }>`
+  position: ${({ position = 'absolute' }) => position};
   top: 0;
   left: 0;
   right: 0;
