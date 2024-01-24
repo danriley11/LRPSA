@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
-import { HOME, ABOUT, CONSULTATIONS, SPECIALISTS } from '../../../routes/routes';
+import { HOME, ABOUT, CONSULTATIONS, SPECIALISTS, CONTACT } from '../../../routes/routes';
 import { MenuIconContainer, XBar1, XBar2, XBar3 } from '../../menu/Menu.styles';
 import { MenuDropdownContainer, MenuDropdownItem } from '../../menu/MenuDropdown.styles';
 import { P } from '../../core/typography';
@@ -68,6 +68,15 @@ const NavigationMenu = () => {
               navigate(SPECIALISTS);
             }}>
             <P>Specialists</P>
+          </MenuDropdownItem>
+
+          <MenuDropdownItem
+            isPath={pathMatch(CONTACT)}
+            onClick={() => {
+              toggleHamburger();
+              navigate(CONTACT);
+            }}>
+            <P>Contact Noelle</P>
           </MenuDropdownItem>
         </MenuDropdownContainer>
       )}
